@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('.teachers__list').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     arrows: true,
     dots: false,
     autoplay: true,
@@ -14,7 +14,7 @@ $(document).ready(function() {
         breakpoint: 800,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       }
     ]
