@@ -418,13 +418,11 @@
   position: absolute;
   top: 28px;
   outline: none;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.slick-arrow:hover {
-  opacity: 0.7;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .slick-arrow.slick-prev {
@@ -433,10 +431,22 @@
   background-size: 15px;
 }
 
+.slick-arrow.slick-prev:hover {
+  -webkit-transform: translateX(-10%);
+  -ms-transform: translateX(-10%);
+  transform: translateX(-10%);
+}
+
 .slick-arrow.slick-next {
   right: 1px;
   background: url("../img/right-arrow.svg") center no-repeat;
   background-size: 15px;
+}
+
+.slick-arrow.slick-next:hover {
+  -webkit-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  transform: translateX(10%);
 }
 
 .slick-slider.teachers__list {

@@ -272,18 +272,19 @@ $fonts: Arial, Helvetica, sans-serif
   position: absolute
   top: 28px;
   outline: none
-  @include trans(opacity)
-
-  &:hover
-    opacity: 0.7
+  @include trans(transform)    
   &.slick-prev
     left: 1px
     background: url('../img/left-arrow.svg') center no-repeat
     background-size: 15px
+    &:hover
+      transform: translateX(-10%)
   &.slick-next
     right: 1px
     background: url('../img/right-arrow.svg') center no-repeat
     background-size: 15px
+    &:hover
+      transform: translateX(10%)
 
 .slick-slider 
   &.teachers__list
